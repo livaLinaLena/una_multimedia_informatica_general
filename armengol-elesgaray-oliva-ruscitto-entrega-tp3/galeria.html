@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | SenseFx Collective</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- HEADER PRINCIPAL -->
+    <header class="nav">
+        <div class="nav-container">
+             <a href="index.html" class="logo">
+                 <img src="imagenes/logo.jpg" alt="SenseFx Collective" class="logo-img">
+                 <span class="logo-txt">SenseFx Collective</span>
+             </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="galeria.html" class="nav-link active">Galería</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- ENCABEZADO DE GALERIA -->
+        <section class="seccion seccion-contexto">
+            <div class="container text-center">
+                <header>
+                    <h1 class="contexto-titulo">Nuestros <span class="highlight">Trabajos</span> Creativos</h1>
+                    <p class="contexto-subtitulo">Explora nuestro diverso portafolio de arte multimedia a través de diferentes estilos y medios.</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- INDICE DE FILTRADO -->
+        <aside class="seccion seccion-no-padding-top">
+            <div class="container">
+                <div class="filtro-container">
+                    <header class="filtro-header">
+                        <h2 class="filtro-titulo">Filtrar por Artista</h2>
+                    </header>
+                    <div class="filtro-btns">
+                        <button class="filtro-btn active" data-filter="all">Todos los Trabajos</button>
+                        <button class="filtro-btn" data-filter="claudio-armengol">Claudio Armengol</button>
+                        <button class="filtro-btn" data-filter="rosilus">Rosalia Ruscitto</button>
+                        <button class="filtro-btn" data-filter="santiti">Santiago Elesgaray</button>
+                        <button class="filtro-btn" data-filter="carolita">Carolina Oliva</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- VISTA X ARTISTA-->
+         <section class="seccion seccion-artista-individual" id="vista-artista" style="display: none;">
+            <div class="container">
+                <button class="btn btn-secundario mb-3" id="btn-volver-galeria">
+                 ← Volver a la Galería
+                 </button>
+                <div class="cuadricula cuadricula-colum-2 artista-detalle" id="contenido-artista">
+                </div>
+            </div>
+        </section>
+        <!-- GALERIA GRUPAL -->
+        <section class="seccion seccion-no-padding-top" id="galeria-grupal">
+            <div class="container">
+                <div class="galeria-cuadricula" id="galeria-cuadricula">
+                    <!-- ITEM 1 - Claudio Armengol -->
+                    <article class="galeria-item" data-category="claudio-armengol" data-artista="claudio">
+                        <div class="galeria-tarjeta">
+                            <div class="galeria-img">
+                                <img src="imagenes/Claudio3.jpg" alt="Visual Brewer - Exploración abstracta de imágenes del subconsciente">
+                            </div>
+                            <div class="galeria-contenido">
+                                <header class="galeria-header">
+                                    <h3 class="galeria-titulo">Visual Brewer</h3>
+                                    <span class="galeria-tag galeria-tag-violeta">Arte Abstracto</span>
+                                </header>
+                                <p class="galeria-descripcion">Una exploración vibrante de imágenes del subconsciente.</p>
+                                <footer class="galeria-artista-info">
+                                    <span class="artista-icono">👤</span>
+                                    <span>Claudio Armengol</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ITEM 2 - Rosalia Ruscitto -->
+                    <article class="galeria-item" data-category="rosilus" data-artista="rosalia">
+                        <div class="galeria-tarjeta">
+                            <div class="galeria-img">
+                                <img src="imagenes/Rosalia3.jpg" alt="Desaturado - Fotografía analógica con estética vintage">
+                            </div>
+                            <div class="galeria-contenido">
+                                <header class="galeria-header">
+                                    <h3 class="galeria-titulo">Desaturado</h3>
+                                    <span class="galeria-tag galeria-tag-indigo">Fotografía Analógica</span>
+                                </header>
+                                <p class="galeria-descripcion">Fotografia actual con aires del pasado.</p>
+                                <footer class="galeria-artista-info">
+                                    <span class="artista-icono">👤</span>
+                                    <span>Rosalia Ruscitto</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ITEM 3 - Santiago Elesgaray -->
+                    <article class="galeria-item" data-category="santiti" data-artista="santiago">
+                        <div class="galeria-tarjeta">
+                            <div class="galeria-img">
+                                <img src="imagenes/Santiti2.png" alt="Animaciones Pacientes - Stop motion con objetos">
+                            </div>
+                            <div class="galeria-contenido">
+                                <header class="galeria-header">
+                                    <h3 class="galeria-titulo">Animaciones Pacientes</h3>
+                                    <span class="galeria-tag galeria-tag-rosa">Stop Motion</span>
+                                </header>
+                                <p class="galeria-descripcion">Crea historias con la animacion de objetos.</p>
+                                <footer class="galeria-artista-info">
+                                    <span class="artista-icono">👤</span>
+                                    <span>Santiago Elesgaray</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ITEM 4 - Carolina Oliva -->
+                    <article class="galeria-item" data-category="carolita" data-artista="carolina">
+                        <div class="galeria-tarjeta">
+                            <div class="galeria-img">
+                                <img src="imagenes/Carolita2.jpg" alt="Arte Impalpable - Diseño de iluminación para espectáculos">
+                            </div>
+                            <div class="galeria-contenido">
+                                <header class="galeria-header">
+                                    <h3 class="galeria-titulo">Arte Impalpable</h3>
+                                    <span class="galeria-tag galeria-tag-verde">Iluminación</span>
+                                </header>
+                                <p class="galeria-descripcion">Brinda cuerpo a tus ideas a través de la luz.</p>
+                                <footer class="galeria-artista-info">
+                                    <span class="artista-icono">👤</span>
+                                    <span>Carolina Oliva</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER GENERAL -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cuadricula">
+                <div class="footer-seccion">
+                    <a href="index.html" class="logo">
+                        <img src="imagenes/logo.jpg" alt="SenseFx Collective" class="logo-img">
+                        <span class="logo-txt">SenseFx Collective</span>
+                    </a>
+                    <p class="footer-txt">Un colectivo de artistas multimedia creando experiencias visuales impresionantes.</p>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Artistas</h3>
+                    <ul class="footer-links">
+                        <li><a href="galeria.html" class="enlace-artista" data-artista="claudio">Claudio Armengol</a></li>
+                        <li><a href="galeria.html" class="enlace-artista" data-artista="rosalia">Rosalía Ruscitto</a></li>
+                        <li><a href="galeria.html" class="enlace-artista" data-artista="santiago">Santiago Elesgaray</a></li>
+                        <li><a href="galeria.html" class="enlace-artista" data-artista="carolina">Carolina Oliva</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Conectar</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btn">
+                <p>&copy; 2025 SenseFx Collective. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

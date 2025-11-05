@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SenseFx Collective</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- HEADER PRINCIPAL -->
+    <header class="nav">
+        <div class="nav-container">
+             <a href="index.html" class="logo">
+                 <img src="imagenes/logo.jpg" alt="SenseFx Collective" class="logo-img">
+                 <span class="logo-txt">SenseFx Collective</span>
+             </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- ENCABEZADO DE CONTACTO -->
+        <section class="seccion seccion-contexto">
+            <div class="container text-center">
+                <header>
+                    <h1 class="contexto-titulo">Creemos <span class="highlight">Juntos</span></h1>
+                    <p class="contexto-subtitulo">¿Tenes un proyecto en mente? Contacta nuestro equipo y generemos herramientas que ayuden a darle vida a tu visión.</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- CONTENIDO DE CONTACTO -->
+        <section class="seccion">
+            <div class="container">
+                <div class="cuadricula cuadricula-colum-2">
+                    <!-- FORMULARIO DE CONTACTO -->
+                    <article class="contacto-formulario-container">
+                        <header>
+                            <h2 class="contacto-titulo">Envíanos un Mensaje</h2>
+                        </header>
+                        <form class="formulario-contacto">
+                            <div class="formulario-equipo">
+                                <label for="name" class="formulario-label">Tu Nombre</label>
+                                <input type="text" id="name" class="formulario-input" placeholder="Nombre" required>
+                            </div>
+                            <div class="formulario-equipo">
+                                <label for="email" class="formulario-label">Correo Electrónico</label>
+                                <input type="email" id="email" class="formulario-input" placeholder="tu@mail.com" required>
+                            </div>
+                            <div class="formulario-equipo">
+                                <label for="subject" class="formulario-label">Asunto</label>
+                                <select id="subject" class="formulario-input" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="collaboration">Colaboración</option>
+                                    <option value="commission">Trabajo por Encargo</option>
+                                    <option value="hire">Contratar a Nuestro Equipo</option>
+                                    <option value="other">Otra Consulta</option>
+                                </select>
+                            </div>
+                            <div class="formulario-equipo">
+                                <label for="message" class="formulario-label">Tu Mensaje</label>
+                                <textarea id="message" rows="5" class="formulario-input" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                            </div>
+                            <footer>
+                                <button type="submit" class="btn btn-primario btn-full">Enviar Mensaje</button>
+                            </footer>
+                        </form>
+                    </article>
+                    
+                    <!-- INFORMACION DE CONTACTO -->
+                    <aside class="info-contacto">
+                        <!-- TARJETA DE INFORMACION -->
+                        <article class="info-tarjeta">
+                            <header>
+                                <h2 class="contacto-titulo">Información de Contacto</h2>
+                            </header>
+                            <div class="info-artistas">
+                                <div class="info-artista">
+                                    <div class="info-artista-icono info-artista-icono-violeta">
+                                        <span>✉️</span>
+                                    </div>
+                                    <div class="info-contenido">
+                                        <h3 class="info-titulo">Escribínos</h3>
+                                        <p class="info-txt">portafoliomulti@ficticio.com</p>
+                                    </div>
+                                </div>
+                                <div class="info-artista">
+                                    <div class="info-artista-icono info-artista-icono-indigo">
+                                        <span>📞</span>
+                                    </div>
+                                    <div class="info-contenido">
+                                        <h3 class="info-titulo">Llamanos</h3>
+                                        <p class="info-txt">+11010101101</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- DISPONIBILIDAD DEL EQUIPO -->
+                     <article class="tarjeta-disponible">
+                         <header>
+                             <h2 class="contacto-titulo">Disponibilidad del Equipo</h2>
+                         </header>
+                             <div class="disponible-lista">
+                                 <div class="disponible-artista">
+                                     <div class="disponible-artista-info">
+                                         <img src="imagenes/Claudio5.jpg" alt="Claudio Armengol - Performance Audiovisual" class="disponible-artista-avatar">
+                                          <span class="disponible-artista-nombre">Claudio Armengol</span>
+                                     </div>
+                                          <span class="disponible-estado estado-color-disponible">Disponible</span>
+                                 </div>
+                                 <div class="disponible-artista">
+                                     <div class="disponible-artista-info">
+                                          <img src="imagenes/Rosalia4.jpg" alt="Rosalia Ruscitto - Fotografía Analógica" class="disponible-artista-avatar">
+                                          <span class="disponible-artista-nombre">Rosalia Ruscitto</span>
+                                     </div>
+                                          <span class="disponible-estado estado-color-limitado">Limitado</span>
+                                 </div>
+                                 <div class="disponible-artista">
+                                     <div class="disponible-artista-info">
+                                         <img src="imagenes/Santiti1.jpg" alt="Santiago Elesgaray - Stop Motion" class="disponible-artista-avatar">
+                                         <span class="disponible-artista-nombre">Santiago Elesgaray</span>
+                                     </div>
+                                         <span class="disponible-estado estado-color-ocupado">Ocupado</span>
+                                 </div>
+                                     <div class="disponible-artista">
+                                         <div class="disponible-artista-info">
+                                             <img src="imagenes/Carolita1.jpg" alt="Carolina Oliva - Iluminación para Shows" class="disponible-artista-avatar">
+                                             <span class="disponible-artista-nombre">Carolina Oliva</span>
+                                         </div>
+                                         <span class="disponible-estado estado-color-no-disponible">No Disponible</span>
+                                    </div>
+                             </div>
+                        </article>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER GENERAL-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cuadricula">
+                 <div class="footer-seccion">
+                     <a href="index.html" class="logo">
+                         <img src="imagenes/logo.jpg" alt="SenseFx Collective" class="logo-img">
+                          <span class="logo-txt">SenseFx Collective</span>
+                     </a>
+                     <p class="footer-txt">Un colectivo de artistas multimedia creando experiencias visuales impresionantes.</p>
+                 </div>
+                <div class="footer-seccion">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seccion">
+                     <h3>Artistas</h3>
+                     <ul class="footer-links">
+                        <li><a href="#" class="enlace-artista" data-artista="claudio">Claudio Armengol</a></li>
+                        <li><a href="#" class="enlace-artista" data-artista="rosalia">Rosalía Ruscitto</a></li>
+                        <li><a href="#" class="enlace-artista" data-artista="santiago">Santiago Elesgaray</a></li>
+                        <li><a href="#" class="enlace-artista" data-artista="carolina">Carolina Oliva</a></li>
+                     </ul>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Conectar</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btn">
+                <p>&copy; 2025 SenseFx Collective. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>
